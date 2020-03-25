@@ -7,7 +7,7 @@ module.exports = {
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended" // 自動でprettier pluginを使ってくれる（別途入れる必要はある）
   ],
   globals: {
     Atomics: "readonly",
