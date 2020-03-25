@@ -32,5 +32,10 @@ module.exports = {
   resolve: {
     extensions: [".js", ".ts", ".tsx", ".css", ".gif", "jpg", "png", "mp4"]
   },
+  devServer: {
+    contentBase: path.join(__dirname, "dist"),
+    compress: true,
+    port: 8000
+  },
   plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })] // templateを指定しないとhtmlにrootが入らない
 };
