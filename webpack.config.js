@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const Dotenv = require("dotenv-webpack");
 const path = require("path");
 
 module.exports = {
@@ -37,5 +38,8 @@ module.exports = {
     compress: true,
     port: 8000
   },
-  plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })] // templateを指定しないとhtmlにrootが入らない
+  plugins: [
+    new HtmlWebpackPlugin({ template: "./src/index.html" }),
+    new Dotenv()
+  ] // templateを指定しないとhtmlにrootが入らない
 };
