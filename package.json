@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/sadnessOjisan/starter-tsc-fullbuild#readme",
   "devDependencies": {
+    "@types/react": "^16.9.25",
+    "@types/react-dom": "^16.9.5",
     "@typescript-eslint/eslint-plugin": "^2.25.0",
     "@typescript-eslint/parser": "^2.25.0",
     "css-loader": "^3.4.2",
