@@ -1,2 +1,8 @@
 # starter-tsc-fullbuild
-TSC + Webpack のReactプロジェクトで1ファイルバンドルをする
+
+TSC + Webpack の React プロジェクトで 1 ファイルバンドルをする
+
+## メモ
+
+- glob 形式にはシングルクオートが必要
+-

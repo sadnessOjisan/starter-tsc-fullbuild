@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc src/main.ts --outDir dist"
+    "build": "tsc src/main.ts --outDir dist",
+    "lint:debug": "eslint --debug 'src/**/*.{vue,ts}'",
+    "lint": "eslint 'src/**/*.{vue,ts}'"
   },
   "repository": {
     "type": "git",
@@ -23,5 +25,9 @@
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.19.0",
     "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
