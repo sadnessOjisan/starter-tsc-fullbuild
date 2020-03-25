@@ -1,0 +1,19 @@
+{
+  "name": "starter-tsc-fullbuild",
+  "version": "1.0.0",
+  "description": "TSC + Webpack のReactプロジェクトで1ファイルバンドルをする",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadnessOjisan/starter-tsc-fullbuild.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sadnessOjisan/starter-tsc-fullbuild/issues"
+  },
+  "homepage": "https://github.com/sadnessOjisan/starter-tsc-fullbuild#readme"
+}
