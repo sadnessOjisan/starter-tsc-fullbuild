@@ -4,7 +4,8 @@
   "description": "TSC + Webpack のReactプロジェクトで1ファイルバンドルをする",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc src/main.ts --outDir dist"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/sadnessOjisan/starter-tsc-fullbuild/issues"
   },
-  "homepage": "https://github.com/sadnessOjisan/starter-tsc-fullbuild#readme"
+  "homepage": "https://github.com/sadnessOjisan/starter-tsc-fullbuild#readme",
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
 }
