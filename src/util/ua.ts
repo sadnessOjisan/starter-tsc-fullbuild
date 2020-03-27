@@ -1,5 +1,5 @@
 const ua = navigator.userAgent.toLowerCase();
-
+console.log("outer", ua);
 // Safari
 const isSafari = () => ua.indexOf("safari") > -1 && ua.indexOf("chrome") == -1;
 
@@ -12,4 +12,7 @@ const isiPad = () => ua.indexOf("ipad") > -1;
 /**
  * iOS Safariかどうかを判定する
  */
-export const isIOSSafari = () => (isiPad() || isiPhone()) && isSafari();
+export const isIOSSafari = () => {
+  console.log(ua);
+  return (isiPad() || isiPhone()) && isSafari();
+};
