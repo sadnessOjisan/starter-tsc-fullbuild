@@ -2,20 +2,25 @@ import * as React from "react";
 import styled from "styled-components";
 
 interface IProps {
+  /** 画像パス */
   icon?: string;
+  /** ボタン内テキスト */
   text: string;
+  /** ボタンタイプ */
   type?: "submit" | "button" | "reset";
-  onClick?: () => void;
+  /** クリック時のイベントハンドラ */
+  onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
 
 /**
  * button component
- *
- * @note { type = "submit" } = props;という書き方でdefault値をセットできる。
- * @param props
  */
-export const Button: React.FC<IProps> = (props) => {
-  const { icon, text = "default", type = "submit", onClick } = props;
+export const Button: React.FC<IProps> = ({
+  icon,
+  text,
+  type = "submit",
+  onClick,
+}) => {
   return (
     <StyledButton type={type} onClick={onClick}>
       {icon && <Icon src={icon}></Icon>}

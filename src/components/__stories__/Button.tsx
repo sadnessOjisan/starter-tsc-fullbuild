@@ -6,11 +6,18 @@ import Icon from "../../assets/sample.png";
 export default {
   title: "Button",
   component: Button,
+  parameters: {
+    info: { inline: true },
+  },
 };
 
 export const Text = () => (
   <Button onClick={action("clicked")} text="Hello Button" icon={Icon}></Button>
 );
+
+Text.story = {
+  name: "Text",
+};
 
 export const Emoji = () => (
   <Button onClick={action("clicked")} text="😀 😎 👍 💯"></Button>
