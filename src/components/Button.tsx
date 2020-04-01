@@ -5,6 +5,7 @@ interface IProps {
   icon?: string;
   text: string;
   type?: "submit" | "button" | "reset";
+  onClick?: () => void;
 }
 
 /**
@@ -14,10 +15,10 @@ interface IProps {
  * @param props
  */
 export const Button: React.FC<IProps> = (props) => {
-  const { icon, text = "default", type = "submit" } = props;
+  const { icon, text = "default", type = "submit", onClick } = props;
   return (
-    <StyledButton type={type}>
-      <Icon src={icon}></Icon>
+    <StyledButton type={type} onClick={onClick}>
+      {icon && <Icon src={icon}></Icon>}
       {text}
     </StyledButton>
   );
