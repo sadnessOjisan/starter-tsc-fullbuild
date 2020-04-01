@@ -25,4 +25,7 @@ export const Button: React.FC<IProps> = (props) => {
 
 const StyledButton = styled.button``;
 
-const Icon = styled.img``;
+const Icon = styled.img`
+  width: 12px;
+  height: 12px;
+`;
