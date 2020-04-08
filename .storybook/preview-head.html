@@ -1,0 +1,101 @@
+<style>
+  /* FIXME: 本当は共通パスから読み取りたかった */
+  /* A Modern CSS Reset */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  ul[class],
+  ol[class] {
+    padding: 0;
+  }
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  ul[class],
+  ol[class],
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+  body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+  ul[class],
+  ol[class] {
+    list-style: none;
+  }
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  article > * + * {
+    margin-top: 1em;
+  }
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  img:not([alt]) {
+    filter: blur(10px);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+</style>
+<script>
+  (function (d) {
+    var config = {
+        kitId: "hfp0rad",
+        scriptTimeout: 3000,
+        async: true,
+      },
+      h = d.documentElement,
+      t = setTimeout(function () {
+        h.className =
+          h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+      }, config.scriptTimeout),
+      tk = d.createElement("script"),
+      f = false,
+      s = d.getElementsByTagName("script")[0],
+      a;
+    h.className += " wf-loading";
+    tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+    tk.async = true;
+    // @ts-ignore
+    tk.onload = tk.onreadystatechange = function () {
+      // @ts-ignore
+      a = this.readyState;
+      if (f || (a && a != "complete" && a != "loaded")) return;
+      f = true;
+      clearTimeout(t);
+      try {
+        // @ts-ignore
+        Typekit.load(config);
+      } catch (e) {
+        console.warn("font load error", e);
+      }
+    };
+    // @ts-ignore
+    s.parentNode.insertBefore(tk, s);
+  })(document);
+</script>
