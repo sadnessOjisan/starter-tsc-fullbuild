@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test-cov": "test --coverage",
     "build:dev": "NODE_ENV=development webpack",
     "build:prd": "NODE_ENV=production webpack",
     "lint:debug": "eslint --debug 'src/**/*.{js,ts}'",

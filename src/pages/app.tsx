@@ -11,6 +11,7 @@ export const App: React.FC = () => {
     <div data-testid="wrapper">
       Hello, {process.env.REACT_APP_ENV}!! {isMounted ? "mounted" : "unmounted"}
       <Button text="click me" type="button" icon={Icon}></Button>
+      <img src={Icon}></img>
     </div>
   );
 };

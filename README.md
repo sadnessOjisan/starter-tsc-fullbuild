@@ -4,6 +4,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2590611f-5b33-44c9-a22a-6935eb1a7a63/deploy-status)](https://app.netlify.com/sites/react-ts-starter-storybook/deploys)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6cffb0b2-fffe-4278-a11c-ea4cc362a5a6/deploy-status)](https://app.netlify.com/sites/react-ts-starter-testcov/deploys)
+
 TSC + Webpack の React プロジェクトで 1 ファイルバンドルをする
 
 ## メモ
