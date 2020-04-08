@@ -23,7 +23,7 @@ export const Button: React.FC<IProps> = ({
 }) => {
   return (
     <StyledButton type={type} onClick={onClick}>
-      {icon && <Icon src={icon}></Icon>}
+      {icon && <Icon src={icon} alt="icon"></Icon>}
       {text}
     </StyledButton>
   );

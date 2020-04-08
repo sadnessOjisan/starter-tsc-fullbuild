@@ -25,6 +25,9 @@ jobs:
       - name: type check
         run: |
           yarn run typecheck
+      - name: test
+        run: |
+          yarn run test
       - name: lint
         run: |
           yarn run lint:ci
