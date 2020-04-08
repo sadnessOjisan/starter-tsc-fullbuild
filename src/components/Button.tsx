@@ -10,6 +10,8 @@ interface IProps {
   type?: "submit" | "button" | "reset";
   /** クリック時のイベントハンドラ */
   onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+  /** disableかどうか */
+  disabled?: boolean;
 }
 
 /**
@@ -20,9 +22,10 @@ export const Button: React.FC<IProps> = ({
   text,
   type = "submit",
   onClick,
+  disabled = false,
 }) => {
   return (
-    <StyledButton type={type} onClick={onClick}>
+    <StyledButton type={type} onClick={onClick} disabled={disabled}>
       {icon && <Icon src={icon} alt="icon"></Icon>}
       {text}
     </StyledButton>
